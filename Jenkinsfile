@@ -2,7 +2,7 @@
 pipeline {
   agent {
     node {
-      label 'Swe645-jenkins'
+      label 'swe645-jenkins'
     }
   }
   environment {
