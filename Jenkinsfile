@@ -7,7 +7,7 @@ pipeline {
   }
   environment {
     DOCKER_REGISTRY = 'docker.io'
-    DOCKER_CREDENTIALS = credentials("docker-credentials")
+    DOCKER_CREDENTIALS = credentials("dockerhub")
     KUBERNETES_NAMESPACE = 'swe-a2'
     KUBERNETES_DEPLOYMENT_NAME = 'deploy-a2'
     KUBERNETES_CONTAINER_NAME = 'container-0'
