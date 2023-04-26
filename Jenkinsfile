@@ -34,7 +34,7 @@ pipeline {
          }
          post {
            success {
-             archiveArtifacts artifacts: '*.jar', fingerprint: true
+             archiveArtifacts artifacts: 'target/*.jar', fingerprint: true
            }
          }
        }
