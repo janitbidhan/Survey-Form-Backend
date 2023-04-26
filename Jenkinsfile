@@ -29,7 +29,7 @@ pipeline {
     }
      stage('Build') {
          steps {
-           sh 'mvn clean install -DskipTests --debug --errors'
+           sh 'mvn clean install -DskipTests --errors'
          }
          post {
            success {
