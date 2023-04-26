@@ -8,8 +8,8 @@ pipeline {
   environment {
     DOCKER_REGISTRY = 'docker.io'
     DOCKER_CREDENTIALS = credentials("dockerhub")
-    KUBERNETES_NAMESPACE = 'swe-a2'
-    KUBERNETES_DEPLOYMENT_NAME = 'deploy-a2'
+    KUBERNETES_NAMESPACE = 'deploy-a2'
+    KUBERNETES_DEPLOYMENT_NAME = 'deployment-a2'
     KUBERNETES_CONTAINER_NAME = 'container-0'
     KUBERNETES_CONTAINER_PORT = 8080
   }
