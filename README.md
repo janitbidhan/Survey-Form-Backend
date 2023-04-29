@@ -123,6 +123,17 @@ The pipeline has been tested and deployed successfully for the SWE 645 course. I
 ## Folder Structure
 ```
 .
+├── Configuration Files
+│   ├── AWS
+│   │   ├── Default Admin.yaml
+│   │   ├── cluster-swe.yaml
+│   │   ├── deploy-a2.yaml
+│   │   ├── swe-645-assignment2-a57bb1b4da9c.json
+│   │   ├── swe-645.pem
+│   │   └── swe645-janit.pem
+│   └── RancherYAMLFiles
+│       ├── Cluster.yaml
+│       └── Deployment.yaml
 ├── SWE645-Assignment3.pdf
 └── survey-form-backend
     ├── Dockerfile
@@ -205,6 +216,7 @@ The pipeline has been tested and deployed successfully for the SWE 645 course. I
                     └── assignment3
                         └── Assignment3ApplicationTests.class
 
-45 directories, 37 files
+48 directories, 45 files
+
 ```
 
