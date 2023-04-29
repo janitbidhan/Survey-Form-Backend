@@ -1,4 +1,4 @@
-# SWE 645 Assignment 3: Survey Form Backend (Spring Boot)
+# SWE 645 Assignment 3: Survey Form (Spring Boot+RDS+EC2+GKE+Rancher+Jenkins+Postman)
 ## Team
 > Name: Janit Bidhan, Badri Nath Gaur
 >
@@ -25,7 +25,9 @@ To manage the Kubernetes services on GKE in the Google Cloud Platform, we utiliz
 
 When changes are made to the code in the GitHub repository, the pipeline automatically triggers a build and deployment process to ensure that the latest version of the application is always available on Kubernetes.
 
->Note: These are as part of document, location can be seen in the folder Structure i.e. **SWE645-Assignment2.pdf**
+We test the working of our containerized application by calling different CRUD API calls using Postman.
+
+>Note: These are as part of document, location can be seen in the folder Structure i.e. **SWE645-Assignment3.pdf**
 
 >Also there is a video link at the end and the video in the folder itself.
 > 
@@ -67,65 +69,62 @@ Determine the optimal configuration for the Kubernetes deployment, including res
 Set up access controls and permissions for the Rancher and Jenkins instances to ensure secure access and prevent unauthorized changes.
 Monitored the performance and health of the Kubernetes deployment and made adjustments as needed to optimize efficiency and maintain stability.
 Troubleshot any issues that arose during the deployment and worked together to resolve them quickly to minimize downtime.
-Conducted testing and quality assurance to ensure that the application was functioning as expected and meeting performance requirements.
+Using Postman, we were able to test the functioning of the CRUD APIs which ensured that the application was functioning as expected and meeting performance requirements.
 
 ## Challenges
->Troubleshooting issues with the Kubernetes deployment, especially when dealing with containerization and networking
+> Troubleshooting issues with the Kubernetes deployment, especially when dealing with containerization and networking.
 >
-> Setting up and configuring access controls and permissions for Rancher and Jenkins
+> Analyzing and debugging problems caused because of a mis-match in Java versions of Spring Boot and Rancher EC2 machine.
+>
+> Setting up and configuring access controls and permissions for Rancher and Jenkins.
 >
 > Making Rancher and Jenkins work together to perform continuous deployment.
 >
->  Video editing: We faced challenges in syncing each individual video into a collective entity.
+> Video editing: We faced challenges in syncing each individual video into a collective entity.
 
 ## Pre-requisites for the assignment:
-1. IDE for development.
-2. Docker Desktop for building and testing local image.
-3. Access to AWS Learner lab provided by Dr. Vinod Dubey.
-4. Personal accounts on GitHub, Google Cloud Platform and Docker Hub.
+1.	IDE for development.
+2.	Postman for API testing
+3.	DBeaver for Database testing/setup
+4.	Docker Desktop for building and testing local image.
+5.	Access to AWS Learner lab provided by Dr. Vinod Dubey.
+6.	Personal accounts on GitHub, Google Cloud Platform and Docker Hub.
 
 
 ## Technology Utilised
-1. Github
-2. IntelliJ IDE
-3. Docker Desktop and Docker Hub
-4. AWS EC2, AWS Elastic IP
-5. Google Cloud Platform (GKE)
-6. Jenkins
-7. Kubernetes
-8. Rancher
+1.	Github
+2.	IntelliJ IDE
+3.	Postman
+4.	Docker Desktop and Docker Hub
+5.	AWS EC2, AWS Elastic IP, AWS RDS(Postgres)
+6.	DBeaver
+7.	Google Cloud Platform (GKE)
+8.	Jenkins
+9.	Kubernetes
+10.	Rancher
 
 
 ## Jenkins Pipline Explanation
 
-This pipeline deploys an application using Jenkins, Docker, and Kubernetes. It follows these stages:
+This is a Jenkins pipeline script that defines a series of stages for building and deploying a Spring Boot application in a Kubernetes cluster. 
 
 __Prerequisites__: This stage sets up the necessary credentials and environment variables needed for the deployment.
 
 __Checkout__: This stage checks out the source code from the SCM.
 
-__Build__: This stage builds the application and archives the generated artifacts.
+__Build__: This stage builds the application using Maven and archives the generated artifacts (JAR file).
 
 __Docker Build and Push__: This stage builds a Docker image of the application and pushes it to a Docker registry.
 
-__Deploy to Kubernetes__: This stage deploys the application to a Kubernetes cluster by restarting the deployment.
+__Deploy to Kubernetes__: This stage uses the Kubernetes command-line tool (kubectl) to roll out a new version of the application by restarting the deployment with the specified name and namespace. This triggers the Kubernetes cluster to pull the latest version of the Docker image from the Docker registry and deploy it.
 
-The pipeline uses the following environment variables:
+The pipeline has been tested and deployed successfully for the SWE 645 course. If there are any changes in the repository, it triggers a jenkins build which replaces the docker image with the new build and deploys on docker.
 
-- DOCKER_REGISTRY: The Docker registry used to store the Docker image.
-- DOCKER_CREDENTIALS: The credentials used to authenticate to the Docker registry.
-- KUBERNETES_NAMESPACE: The Kubernetes namespace used to deploy the application.
-- KUBERNETES_DEPLOYMENT_NAME: The name of the Kubernetes deployment used to deploy the application.
-- KUBERNETES_CONTAINER_NAME: The name of the Kubernetes container used to run the application.
-- KUBERNETES_CONTAINER_PORT: The port used by the Kubernetes container to expose the application.
-
-The pipeline has been tested and deployed successfully for the SWE 645 course. Any changes in the repo, triggers a jenkins build which replaces the docker image with the new build and deploys on docker.
-
->[Access it here on LoadBalancer ](http://35.202.219.90:8080/)
+>[Access it here on LoadBalancer ](http://34.132.233.154:8080/surveys/1)
 >
->[JENKINS](http://107.23.40.143:8080/)
+>[JENKINS](http://54.147.159.251:8080/)
 >
->[RANCHER](https://18.209.26.76/dashboard/)
+>[RANCHER](https://3.229.68.37/dashboard)
 >
 >[Youtube Private Video Link](https://youtu.be/ASzeKtW-gDk)
 >  (Last 2 minutes show the demo of chnages made in github trigger the jenkins job to deploy.)
