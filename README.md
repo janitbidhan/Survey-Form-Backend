@@ -1,4 +1,4 @@
-# SWE 645 Assignment 3: Survey Form Backend
+# SWE 645 Assignment 3: Survey Form Backend (Spring Boot)
 ## Team
 > Name: Janit Bidhan, Badri Nath Gaur
 >
