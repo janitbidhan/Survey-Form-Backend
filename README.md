@@ -32,7 +32,7 @@ When changes are made to the code in the GitHub repository, the pipeline automat
 ## Links
 ### Note: Please note that the URLs mentioned below might not work as the AWS Lab (Closes after 4 hours) and GKE clusters were terminated after the demo video was recorded due to their high cost.
 
->[Access it here on LoadBalancer ](http://35.202.219.90:8080/)
+>[Access it here on LoadBalancer ](http://34.132.233.154:8080/surveys/1)
 >
 >[JENKINS](http://54.147.159.251:8080/)
 >
