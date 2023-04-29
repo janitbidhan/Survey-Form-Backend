@@ -132,49 +132,88 @@ The pipeline has been tested and deployed successfully for the SWE 645 course. I
 ## Folder Structure
 ```
 .
-├── AWS
-│   ├── Default Admin.yaml
-│   ├── cluster-swe.yaml
-│   ├── deploy-a2.yaml
-│   ├── swe-645-assignment2-a57bb1b4da9c.json
-│   ├── swe-645.pem
-│   └── swe645-janit.pem
-├── CI:CD Pipeline Demo and Setup.mp4
-├── SWE645-Assignment2.pdf
-├── SurveyPage-HW2
-│   ├── Dockerfile
-│   ├── Jenkinsfile
-│   ├── META-INF
-│   │   └── MANIFEST.MF
-│   ├── README.md
-│   ├── ROOT.war
-│   ├── RancherYAMLFiles
-│   │   ├── Cluster.yaml
-│   │   └── Deployment.yaml
-│   ├── pom.xml
-│   └── src
-│       ├── main
-│       │   ├── java
-│       │   ├── resources
-│       │   └── webapp
-│       │       ├── WEB-INF
-│       │       │   └── web.xml
-│       │       ├── assets
-│       │       │   ├── css
-│       │       │   │   └── styleSurvey.css
-│       │       │   ├── img
-│       │       │   │   ├── 404-error.png
-│       │       │   │   ├── form-icon.jpg
-│       │       │   │   └── imgThankYou.jpeg
-│       │       │   └── js
-│       │       │       └── main.js
-│       │       ├── error
-│       │       │   └── error.html
-│       │       └── index.html
-│       └── test
-│           └── java
-└── readme.md
+├── SWE645-Assignment3.pdf
+└── survey-form-backend
+    ├── Dockerfile
+    ├── Jenkinsfile
+    ├── README.md
+    ├── assignment3.iml
+    ├── mvnw
+    ├── mvnw.cmd
+    ├── pom.xml
+    ├── root.crt
+    ├── src
+    │   ├── main
+    │   │   ├── java
+    │   │   │   └── com
+    │   │   │       └── swe
+    │   │   │           └── assignment3
+    │   │   │               ├── Assignment3Application.java
+    │   │   │               ├── controller
+    │   │   │               │   └── SurveyController.java
+    │   │   │               ├── models
+    │   │   │               │   └── Survey.java
+    │   │   │               ├── repository
+    │   │   │               │   └── SurveyRepository.java
+    │   │   │               └── services
+    │   │   │                   └── SurveyService.java
+    │   │   └── resources
+    │   │       ├── SWE 645 SurveyPage.postman_collection.json
+    │   │       ├── application.properties
+    │   │       ├── script.sql
+    │   │       ├── static
+    │   │       └── templates
+    │   └── test
+    │       └── java
+    │           └── com
+    │               └── swe
+    │                   └── assignment3
+    │                       └── Assignment3ApplicationTests.java
+    └── target
+        ├── assignment3-1.jar
+        ├── assignment3-1.jar.original
+        ├── assignment3.jar
+        ├── classes
+        │   ├── SWE 645 SurveyPage.postman_collection.json
+        │   ├── application.properties
+        │   ├── com
+        │   │   └── swe
+        │   │       └── assignment3
+        │   │           ├── Assignment3Application.class
+        │   │           ├── controller
+        │   │           │   └── SurveyController.class
+        │   │           ├── models
+        │   │           │   └── Survey.class
+        │   │           ├── repository
+        │   │           │   └── SurveyRepository.class
+        │   │           └── services
+        │   │               └── SurveyService.class
+        │   └── script.sql
+        ├── generated-sources
+        │   └── annotations
+        ├── generated-test-sources
+        │   └── test-annotations
+        ├── maven-archiver
+        │   └── pom.properties
+        ├── maven-status
+        │   └── maven-compiler-plugin
+        │       ├── compile
+        │       │   └── default-compile
+        │       │       ├── createdFiles.lst
+        │       │       └── inputFiles.lst
+        │       └── testCompile
+        │           └── default-testCompile
+        │               ├── createdFiles.lst
+        │               └── inputFiles.lst
+        ├── surefire-reports
+        │   ├── TEST-com.swe.assignment3.Assignment3ApplicationTests.xml
+        │   └── com.swe.assignment3.Assignment3ApplicationTests.txt
+        └── test-classes
+            └── com
+                └── swe
+                    └── assignment3
+                        └── Assignment3ApplicationTests.class
 
-18 directories, 25 files
+45 directories, 37 files
 ```
 
