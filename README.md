@@ -5,7 +5,8 @@
 > G Number:G01326011, G01330366
 >
 > Email: [jbidhan@gmu.edu](jbidhan@gmu.edu), [bgaur@gmu.edu](bgaur@gmu.edu)
-
+>
+>[Youtube Private Video Link](https://youtu.be/r0d1-8kPFtQ)
 ## Contents
 These are better explained in the document in detail:
 - Overview
@@ -29,8 +30,6 @@ We test the working of our containerized application by calling different CRUD A
 
 >Note: These are as part of document, location can be seen in the folder Structure i.e. **SWE645-Assignment3.pdf**
 
->Also there is a video link at the end and the video in the folder itself.
-> 
 ## Links
 ### Note: Please note that the URLs mentioned below might not work as the AWS Lab (Closes after 4 hours) and GKE clusters were terminated after the demo video was recorded due to their high cost.
 
@@ -120,14 +119,6 @@ __Deploy to Kubernetes__: This stage uses the Kubernetes command-line tool (kube
 
 The pipeline has been tested and deployed successfully for the SWE 645 course. If there are any changes in the repository, it triggers a jenkins build which replaces the docker image with the new build and deploys on docker.
 
->[Access it here on LoadBalancer ](http://34.132.233.154:8080/surveys/1)
->
->[JENKINS](http://54.147.159.251:8080/)
->
->[RANCHER](https://3.229.68.37/dashboard)
->
->[Youtube Private Video Link](https://youtu.be/r0d1-8kPFtQ)
->  (18:56 Demonstrating the CI/CD Process for the Student Survey Backend and Testing It Using Postman.)
 
 ## Folder Structure
 ```
