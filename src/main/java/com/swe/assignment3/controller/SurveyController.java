@@ -31,14 +31,14 @@ public class SurveyController {
         return surveyService.getAllSurveys();
     }
 
-//    @GetMapping("/{id}")
-//    public ResponseEntity<Survey> getSurveyById(@PathVariable Long id) {
-//        Optional<Survey> survey = surveyService.getSurveyById(id);
-//        if (survey.isPresent()) {
-//            return new ResponseEntity<>(survey.get(), HttpStatus.OK);
-//        }
-//        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-//    }
+    @GetMapping("/{id}")
+    public ResponseEntity<Survey> getSurveyById(@PathVariable Long id) {
+        Optional<Survey> survey = surveyService.getSurveyById(id);
+        if (survey.isPresent()) {
+            return new ResponseEntity<>(survey.get(), HttpStatus.OK);
+        }
+        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+    }
 
     @PostMapping
     public ResponseEntity<?> saveSurvey(@RequestBody String surveyJson) {
