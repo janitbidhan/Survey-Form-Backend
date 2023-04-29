@@ -40,8 +40,8 @@ We test the working of our containerized application by calling different CRUD A
 >
 >[RANCHER](https://3.229.68.37/dashboard)
 >
->[Youtube Private Video Link](https://youtu.be/ASzeKtW-gDk)
->  (Last 2 minutes show the demo of chnages made in github trigger the jenkins job to deploy.)
+>[Youtube Private Video Link](https://youtu.be/r0d1-8kPFtQ)
+>  (18:56 Demonstrating the CI/CD Process for the Student Survey Backend and Testing It Using Postman)
 
 ## Tasks
 - Part 1: Create a database using Amazon RDS by setting up Postgres database. The backend of the application is written in SpringBoot to do CRUD operations on the database. The application is then dockerized the application using Docker and dockerhub.
@@ -126,8 +126,8 @@ The pipeline has been tested and deployed successfully for the SWE 645 course. I
 >
 >[RANCHER](https://3.229.68.37/dashboard)
 >
->[Youtube Private Video Link](https://youtu.be/ASzeKtW-gDk)
->  (Last 2 minutes show the demo of chnages made in github trigger the jenkins job to deploy.)
+>[Youtube Private Video Link](https://youtu.be/r0d1-8kPFtQ)
+>  (18:56 Demonstrating the CI/CD Process for the Student Survey Backend and Testing It Using Postman.)
 
 ## Folder Structure
 ```
