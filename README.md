@@ -1,4 +1,4 @@
-# SWE 645: Survey Form (Spring Boot+RDS+EC2+GKE+Rancher+Jenkins+Postman)
+# Survey Form (Spring Boot+RDS+EC2+GKE+Rancher+Jenkins+Postman)
 >
 >[Youtube Private Video Link](https://youtu.be/r0d1-8kPFtQ)
 ## Contents
