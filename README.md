@@ -1,10 +1,4 @@
-# SWE 645 Assignment 3: Survey Form (Spring Boot+RDS+EC2+GKE+Rancher+Jenkins+Postman)
-## Team
-> Name: Janit Bidhan, Badri Nath Gaur
->
-> G Number:G01326011, G01330366
->
-> Email: [jbidhan@gmu.edu](jbidhan@gmu.edu), [bgaur@gmu.edu](bgaur@gmu.edu)
+# SWE 645: Survey Form (Spring Boot+RDS+EC2+GKE+Rancher+Jenkins+Postman)
 >
 >[Youtube Private Video Link](https://youtu.be/r0d1-8kPFtQ)
 ## Contents
